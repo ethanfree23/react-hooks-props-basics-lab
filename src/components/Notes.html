@@ -1,0 +1,31 @@
+Making components dynamic:
+
+Passing informaiton:
+React allows us to pass units of inforamtion from a parent component down to a child component.
+To assign a prop to a component, we use the same syntax:
+
+        function ParentComponent() {
+            // passing prop to ChildComponent
+            return <ChildComponent text="Hello!" number={2} />;
+        }
+        
+        function ChildComponent(props) {
+            // using the values of the text and number props
+            return (
+            <div>
+                {props.text} {props.number}
+            </div>
+            );
+        }
+
+
+
+Components:
+- are modular, reusable, and enable a "templating" functionality.
+- help us organize our user interface's logic and presentation.
+- enable us to think about each piece in isoliation, and apply structure to complex programs.
+
+Props:
+- are passed from a parent component to a child component.
+- can be accessed in the child components via an object that is passed into our component function.
+- can hold any kind of data (strings, numbers, booleans, objects, and even functions!)

@@ -1,6 +1,6 @@
 import React from "react";
 
-function NavBar() {
+function NavBar(props) {
   return (
     <nav>
       <a href="#home">Home</a>
@@ -10,3 +10,4 @@ function NavBar() {
 }
 
 export default NavBar;
+ 
